@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.aplikasi.sahabatmengaji;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -104,6 +104,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
+        Intent intent = new Intent(this, MenuUtama.class);
+        startActivity(intent);
         finish();
     }
 

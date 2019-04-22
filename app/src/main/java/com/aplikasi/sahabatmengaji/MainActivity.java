@@ -1,21 +1,29 @@
-package com.sourcey.materiallogindemo;
+package com.aplikasi.sahabatmengaji;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    CarouselView carouselView;
+    int[] sampleImages = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        Intent intent = new Intent(this, LoginActivity.class);
+        carouselView = findViewById(R.id.carouselView);
+        carouselView.setPageCount(sampleImages.length);
+        carouselView.setImageListener(imageListener);
+        setTitle("Ngaji Yuk");
+        Intent intent = new Intent(this, MenuUtama.class);
         startActivity(intent);
     }
 
@@ -40,4 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
+
 }

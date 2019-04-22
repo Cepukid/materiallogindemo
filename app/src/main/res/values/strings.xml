@@ -1,6 +1,19 @@
 <resources>
-    <string name="app_name">Material Login Example</string>
+    <string name="app_name">Sahabat Mengaji</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_utama">NgajiYuk!</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="akun">Profil</string>
+    <string name="pesanan">Pesanan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat">Pesan</string>
+    <string name="Nama_chat">Nama_Chat</string>
+    <string name="Isichat">isi chat</string>
+    <string name="about">About</string>
 </resources>

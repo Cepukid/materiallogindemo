@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textSize="25sp"
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#AAFFFFFF"
+                android:text="Promo"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/mainGrid"
+            app:rowCount="2"
+            app:columnCount="3"
+            app:alignmentMode="alignMargins"
+            app:columnOrderPreserved="false"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:padding="1dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <!-- ROW 1  -->
+            <!-- COLUMN 1  -->
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_columnWeight="1"
+                android:layout_marginBottom="12dp"
+                app:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/guru_ngaji" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Ngaji!"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- COLUMN 2  -->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/alquran_hijau"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="Al-Qur'an"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- COLUMN 2  -->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/surat_hijau"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Surat Pendek"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/jadal_hijau"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Jadwal Sholat"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/tnc_hijau" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="Tnc"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
